@@ -20,3 +20,8 @@ fi
 nodejs ./js/makeben.js 0001.ref.tgz 0001.md   
 [[ "$status" -eq 0 ]]
 }
+
+@test "$NOME for page tib.php" {
+nodejs ./js/maketib.js 0001.md   
+[[ "$status" -eq 0 ]]
+}
